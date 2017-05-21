@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>We seek clarity.</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Questrial" rel="stylesheet">
+<script type="text/javascript" src="./weitsicht_main/jquery.js"></script>
+<script type="text/javascript" src="./weitsicht_main/lodash.js"></script>
+
+
+<script> $(function() {
+    $('body').removeClass('fade-out');
+});
+
+window.addEventListener("scroll", myFunction);
+
+function myFunction() {
+    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+        document.getElementById("player").volume = 0.0;
+    } else {
+        document.getElementById("player").volume = 1.0;
+    }
+
+}
+
+
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+    $('.logo_container, .slogan, #arrow_container').css({
+        'opacity': ((height - scrollTop) / height)
+    });
+});
+
+window.addEventListener("scroll", myFunction);
+
+</script>
+
+</script>
+
+</head>
+
+
+<body>
+</div>
+  <a class="logo"></a>
+<div id="arrow_container">
+    <img width="40px" height="40px" src="weitsicht_main/arrow.svg">
+</div>
+<div class="wrapper">
+
+
+    <div class="logo_container">
+      <video poster="weitsicht_main/weitsicht_poster.jpg" id="player" playsinline autoplay loop>
+  <source src="./weitsicht_main/weitsicht_video.mp4" type="video/mp4">
+  <source src="./weitsicht_main/weitsicht_video.m4v" type="video/m4v">
+  </video>
+</div>
+
+</div>
+
+<div class="right">
+    <p>We are concerned with default settings, security literacy and the future of the web. We are here to seek clarity, to try to understand and to take action.</p>
+    <h2>Project weitsicht, which means foresight, is a browser extension and online space that allows digital citizens to share insights on their internet browsing routine.</h2>
+    <div><h5><a href="https://chrome.google.com/webstore/detail/ljaphbchlaeibfcnabgfcanjmghcplip"</a>Add me to Chrome<h5/></div>
+
+  <div id="faq">
+    <h3>FAQ</h3>
+
+    <a "why">Why is this important?<span><img src="weitsicht_main/your_data.gif" alt="image" height="200" position="center"/></a><h2>We believe that you should be in control of your online appearance and data. We love technology - but we believe that we should own the pixels and understand what we share.</h2></span>
+    <a "what">I have picked up a pixel on a public space. What is next?<span><img src="weitsicht_main/community_01.gif" alt="image" height="170"/></a><h2>Welcome to weitsicht and thanks for visiting. Why not install our browser extension and become part of our community?</h2></span>
+    <a "language">How to post?<span><img src="weitsicht_main/submit.gif" alt="image" height="180" position="left"/></a><h2>Everyone can post! You are part of weitsicht. Did you recently change your settings on a social media account? Show us how to do it! Or how do you imagine the future of the web will look to us? We are interested. We seek your opinion.</h2></span>
+  </div>
+  <div><h4><a href="https://weitsicht.typeform.com/to/SfAf6J"</a>Submit article<h4/></div>
+
+</div>
+</div>
+
+</body>
+
+<style type="text/css">
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+   padding: 0px;
+}
+
+#modal::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff3f00;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ff3f00;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 35px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ff3f00;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+#header {
+    background: #FFF;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 2em);
+    height: 3.6em;
+    z-index: 1000;
+  }
+
+.logo {
+    height: 35px;
+    width: 200px;
+    margin: 2em;
+    position: fixed;
+    background: url(./weitsicht_main/logo.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    display: block;
+    z-index: 9999;
+}
+
+.right {
+  opacity: 1;
+  transition: 1s opacity;
+  float: right;
+  margin-top: 1em;
+  margin-right: 4em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 70%;
+  padding-bottom: 2em;
+  padding-left: 30px;
+  background: transparent;
+  display: inline-block;
+}
+
+.right.fade-out {
+  opacity: 0;
+   transition: none;
+}
+div {
+    display: block;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 100;
+  width: 500px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h2 {
+  color: black;
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+
+h3 {
+  font-size: 0.5em;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 1em;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.wrapper {
+    height: 180vh;
+}
+
+.logo_container {
+    background-repeat: no-repeat;
+    background-position: center;
+    width:150%;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: -1;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 60%;
+    max-height: 60%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(./weitsicht_main/weitsicht_poster.jpg) no repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+a:-webkit-any-link {
+  color: black;
+  letter-spacing: 0.5px;
+  line-height: 170%;
+  text-decoration: none;
+}
+
+#video_weitsicht {
+  padding-left: 2em;
+  padding-bottom: 2em;
+}
+
+h5 {
+  width: 200px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 140%;
+  font-spacing: 10px;
+  box-shadow: inset 0 -0.155em white, inset 0 -0.195em #ff3f00;
+  display: inline;
+}
+
+#faq a {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  padding-top: 2em;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  font-spacing: 10px;
+  box-shadow:
+  inset 0 -0.07em black;
+  display: inline;
+}
+#faq.what {
+  position:relative;
+  top:50px;
+}
+
+
+#faq a span {
+              position: center;
+              display:none;
+              font-size: 1.5em;
+             }
+#faq a:hover span {
+    position: absolute;
+    left: 35%;
+    display: inline-block;
+    z-index: -999;
+    font-size: 1.5em;
+  }
+
+#faq {
+  display: center;
+  font-size: 1.5em;
+  index: 999;
+  padding-top: 2em;
+}
+
+#faq h2 {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.6em;
+  font-weight: 100;
+  text-decoration: none;
+  padding-bottom: 2em;
+}
+
+#arrow_container {
+  position: fixed;
+    bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+</style>
+</html>
